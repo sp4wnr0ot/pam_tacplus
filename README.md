@@ -41,12 +41,31 @@ This package has been successfully used with free [tac_plus](http://www.shrubber
 
 Semantics of these options only makes sense in the context of the [TACACS+](https://tools.ietf.org/html/draft-grant-tacacs-02) specification - for example, a dial-up router might request *ppp* service with protocol *ip* for their users, authenticating them with *pap* protocol which reflects the typical usage of TACACS+ back in 90's. These values however do not really need to match the actual service offered by your server as the TACACS+ server only cares about the service and protocol fields matching what it has in its configuration.
 
+### Taccplus for RHEL 7 
+
+```
+Fixed the Makefile's to supress fail issues in compilation over RHEL 7.6 x64_64
+taking off  
+AM_CFLAGS = -Wall -Wextra -Werror
+Raul Leite <rleite@redhat.com>
+** Very important to mention I already did the RPM's build for RHEL as weel in the repo like:
+- https://github.com/sp4wnr0ot/pam_tacplus/tree/master/RPMS
+
+```
+
 ### Basic installation:
 The code uses standard GNU autotools:
 ```
 $ ./auto.sh
 $ ./configure && make && sudo make install
 ```
+
+```
+To install 'pam_tacplus-1.4.1-1' on RHEL  7.6 x86_64
+$ rpm -ivh https://github.com/sp4wnr0ot/pam_tacplus/blob/master/RPMS/pam_tacplus-1.4.1-1.el7.x86_64.rpm
+```
+
+
 ### Example configuration:
 ```
 #%PAM-1.0
