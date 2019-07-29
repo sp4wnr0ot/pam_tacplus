@@ -66,7 +66,8 @@ $ ./configure && make && sudo make install
 
 ```
 To install 'pam_tacplus-1.4.1-1' on RHEL  7.6 x86_64
-$ rpm -ivh https://github.com/sp4wnr0ot/pam_tacplus/blob/master/RPMS/pam_tacplus-1.4.1-1.el7.x86_64.rpm
+$ wget https://github.com/sp4wnr0ot/pam_tacplus/raw/master/RPMS/pam_tacplus-1.4.1-1.el7.x86_64.rpm
+$ rpm -ivh pam_tacplus-1.4.1-1.el7.x86_64.rpm
 ```
 
 
