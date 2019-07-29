@@ -47,7 +47,11 @@ Semantics of these options only makes sense in the context of the [TACACS+](http
 Fixed the Makefile's to supress fail issues in compilation over RHEL 7.6 x64_64
 taking off  
 AM_CFLAGS = -Wall -Wextra -Werror
+
+```
 Raul Leite <rleite@redhat.com>
+
+```
 ** Very important to mention I already did the RPM's build for RHEL as weel in the repo like:
 - https://github.com/sp4wnr0ot/pam_tacplus/tree/master/RPMS
 
